@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -14,16 +16,16 @@
       </div>
       <nav class="site-nav" aria-label="Navigasi utama">
         <ul>
-          <li><a href="#kontak" tabindex="3">Kontak</a></li>
-          <li><a href="#tentang" tabindex="1">Tentang Saya</a></li>
-          <li><a href="#keterampilan" tabindex="2">Keterampilan</a></li>
-          <li><a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="4">Portofolio</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+          <li><a href="#keterampilan">Keterampilan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" rel="noopener noreferrer">Portofolio</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="konten-utama" class="main-content">
+  <main id="konten-utama" class="main-content" tabindex="-1">
     <div class="container">
       <section id="tentang" class="section about-section" aria-labelledby="judul-tentang">
         <div class="about-wrapper">
