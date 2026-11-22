@@ -6,31 +6,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="header">
+  <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <div class="brand-name">Vincentius Evan Adibrata</div>
-        <div class="brand-role">Mahasiswa Computer Science &amp; Full-Stack Web Developer</div>
+        <p class="brand-name">Vincentius Evan Adibrata</p>
+        <p class="brand-role">Mahasiswa Computer Science &amp; Full-Stack Web Developer</p>
       </div>
-      <div class="nav">
-        <a href="#kontak" tabindex="3">Kontak</a>
-        <a href="#tentang" tabindex="1">Tentang Saya</a>
-        <a href="#keterampilan" tabindex="2">Keterampilan</a>
-        <a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" tabindex="4">Portofolio</a>
-      </div>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#kontak" tabindex="3">Kontak</a></li>
+          <li><a href="#tentang" tabindex="1">Tentang Saya</a></li>
+          <li><a href="#keterampilan" tabindex="2">Keterampilan</a></li>
+          <li><a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="4">Portofolio</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="main-content">
+  <main id="konten-utama" class="main-content">
     <div class="container">
-      <div id="tentang" class="section about-section">
-        <div class="section-title">Tentang Saya</div>
+      <section id="tentang" class="section about-section" aria-labelledby="judul-tentang">
         <div class="about-wrapper">
           <div class="about-photo">
             <img src="assets/profile-avatar.svg" class="profile-img">
           </div>
           <div class="about-text">
-            <h1>Halo, saya Vincentius Evan Adibrata</h1>
+            <p class="section-eyebrow">Tentang Saya</p>
+            <h1 id="judul-tentang">Halo, saya Vincentius Evan Adibrata</h1>
             <p class="subtitle">Mahasiswa S1 Computer Science (Semester 1) di Universitas Cakrawala</p>
             <p class="bio">
               Saya merupakan lulusan Hacktiv8 Full-Stack Web Developer Bootcamp (April 2026) yang
@@ -39,66 +41,66 @@
               pengembangan antarmuka web modern di Universitas Cakrawala.
             </p>
             <div class="about-links">
-              <a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" class="btn-primary">Lihat Portofolio</a>
-              <a href="https://github.com/vincentiusevan" target="_blank" class="btn-secondary">GitHub</a>
-              <a href="https://linkedin.com/in/vincentius-evan-41114326a" target="_blank" class="btn-secondary">LinkedIn</a>
+              <a href="https://portfolio-evan-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">Lihat Portofolio</a>
+              <a href="https://github.com/vincentiusevan" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+              <a href="https://linkedin.com/in/vincentius-evan-41114326a" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="keterampilan" class="section skills-section">
-        <div class="section-title">Daftar Keterampilan</div>
+      <section id="keterampilan" class="section skills-section" aria-labelledby="judul-keterampilan">
+        <h2 id="judul-keterampilan" class="section-title">Daftar Keterampilan</h2>
         <p class="section-desc">Teknologi dan alat yang saya gunakan dalam membangun aplikasi full-stack.</p>
         <div class="skills-grid">
-          <div class="skill-card">
-            <h4>Bahasa Pemrograman</h4>
-            <div class="skill-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
-              <span class="tag">HTML5 &amp; CSS3</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h4>Frontend &amp; Mobile</h4>
-            <div class="skill-tags">
-              <span class="tag">React.js</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Bootstrap</span>
-              <span class="tag">Redux</span>
-              <span class="tag">React Native</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h4>Backend &amp; API</h4>
-            <div class="skill-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">Express.js</span>
-              <span class="tag">REST API</span>
-              <span class="tag">GraphQL</span>
-              <span class="tag">JWT &amp; OAuth</span>
-              <span class="tag">Zod</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h4>Database &amp; Tools</h4>
-            <div class="skill-tags">
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Redis</span>
-              <span class="tag">Git &amp; GitHub</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Vercel &amp; AWS</span>
-            </div>
-          </div>
+          <article class="skill-card">
+            <h3>Bahasa Pemrograman</h3>
+            <ul class="skill-tags">
+              <li class="tag">JavaScript</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">Python</li>
+              <li class="tag">SQL</li>
+              <li class="tag">HTML5 &amp; CSS3</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Frontend &amp; Mobile</h3>
+            <ul class="skill-tags">
+              <li class="tag">React.js</li>
+              <li class="tag">Next.js</li>
+              <li class="tag">Tailwind CSS</li>
+              <li class="tag">Bootstrap</li>
+              <li class="tag">Redux</li>
+              <li class="tag">React Native</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Backend &amp; API</h3>
+            <ul class="skill-tags">
+              <li class="tag">Node.js</li>
+              <li class="tag">Express.js</li>
+              <li class="tag">REST API</li>
+              <li class="tag">GraphQL</li>
+              <li class="tag">JWT &amp; OAuth</li>
+              <li class="tag">Zod</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Database &amp; Tools</h3>
+            <ul class="skill-tags">
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">MongoDB</li>
+              <li class="tag">Redis</li>
+              <li class="tag">Git &amp; GitHub</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Vercel &amp; AWS</li>
+            </ul>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div id="kontak" class="section contact-section">
-        <div class="section-title">Formulir Kontak</div>
+      <section id="kontak" class="section contact-section" aria-labelledby="judul-kontak">
+        <h2 id="judul-kontak" class="section-title">Formulir Kontak</h2>
         <p class="section-desc">Tertarik berkolaborasi atau berdiskusi? Kirim pesan melalui formulir di bawah ini.</p>
         <form class="contact-form">
           <div class="form-group">
@@ -115,14 +117,14 @@
           </div>
           <div class="btn-submit" onclick="alert('Terima kasih! Pesan Anda telah dicatat.')">Kirim Pesan</div>
         </form>
-      </div>
+      </section>
     </div>
-  </div>
+  </main>
 
-  <div class="footer">
+  <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 Vincentius Evan Adibrata &middot; Harapan Indah, Bekasi &middot; vincent.evan05@gmail.com</p>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
