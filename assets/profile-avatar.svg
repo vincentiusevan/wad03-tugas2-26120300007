@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="suit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="24" fill="url(#bg)" />
+  <circle cx="268" cy="54" r="42" fill="#2563eb" opacity="0.22" />
+  <circle cx="48" cy="272" r="56" fill="#38bdf8" opacity="0.14" />
+  <!-- Shoulders & Suit -->
+  <path d="M52 320 C56 248 102 222 160 222 C218 222 264 248 268 320 Z" fill="url(#suit)" />
+  <!-- Shirt & Tie -->
+  <polygon points="134,224 186,224 160,290" fill="#f8fafc" />
+  <polygon points="154,234 166,234 169,280 160,294 151,280" fill="#1d4ed8" />
+  <!-- Neck -->
+  <rect x="142" y="186" width="36" height="44" rx="14" fill="#f1c29b" />
+  <!-- Head -->
+  <ellipse cx="160" cy="142" rx="48" ry="56" fill="#f6cca8" />
+  <!-- Ears -->
+  <ellipse cx="111" cy="146" rx="8" ry="12" fill="#f1c29b" />
+  <ellipse cx="209" cy="146" rx="8" ry="12" fill="#f1c29b" />
+  <!-- Hair -->
+  <path d="M112 132 C110 92 134 74 164 76 C194 78 212 96 208 134 C202 112 184 102 158 104 C132 106 118 114 112 132 Z" fill="#18181b" />
+  <!-- Glasses -->
+  <rect x="126" y="130" width="28" height="19" rx="5" fill="#ffffff" fill-opacity="0.16" stroke="#0f172a" stroke-width="3" />
+  <rect x="166" y="130" width="28" height="19" rx="5" fill="#ffffff" fill-opacity="0.16" stroke="#0f172a" stroke-width="3" />
+  <line x1="154" y1="139" x2="166" y2="139" stroke="#0f172a" stroke-width="3" />
+  <!-- Eyes -->
+  <circle cx="140" cy="140" r="3.2" fill="#0f172a" />
+  <circle cx="180" cy="140" r="3.2" fill="#0f172a" />
+  <!-- Smile -->
+  <path d="M144 167 Q160 179 176 167" fill="none" stroke="#9a5b3b" stroke-width="3.2" stroke-linecap="round" />
+  <!-- Monogram Badge -->
+  <rect x="230" y="266" width="70" height="32" rx="16" fill="#1d4ed8" stroke="#93c5fd" stroke-width="1.5" />
+  <text x="265" y="287" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">VEA</text>
+</svg>
