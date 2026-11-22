@@ -108,20 +108,26 @@
       <section id="kontak" class="section contact-section" aria-labelledby="judul-kontak">
         <h2 id="judul-kontak" class="section-title">Formulir Kontak</h2>
         <p class="section-desc">Tertarik berkolaborasi atau berdiskusi? Kirim pesan melalui formulir di bawah ini.</p>
-        <form class="contact-form">
+        <p class="form-note">Kolom bertanda <span class="required-mark" aria-hidden="true">*</span> wajib diisi.</p>
+        <form class="contact-form" action="#kontak" method="post">
           <div class="form-group">
-            <input type="text" placeholder="Nama Lengkap">
+            <label for="nama">Nama Lengkap <span class="required-mark" aria-hidden="true">*</span></label>
+            <input id="nama" name="nama" type="text" autocomplete="name" required placeholder="Masukkan nama lengkap Anda">
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Alamat Email (contoh: nama@email.com)">
+            <label for="email">Alamat Email <span class="required-mark" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint" placeholder="nama@email.com">
+            <small id="email-hint" class="form-hint">Digunakan hanya untuk membalas pesan Anda.</small>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Subjek Pesan">
+            <label for="subjek">Subjek Pesan</label>
+            <input id="subjek" name="subjek" type="text" placeholder="Contoh: Kolaborasi Proyek Web">
           </div>
           <div class="form-group">
-            <textarea rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+            <label for="pesan">Pesan <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="pesan" name="pesan" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
           </div>
-          <div class="btn-submit" onclick="alert('Terima kasih! Pesan Anda telah dicatat.')">Kirim Pesan</div>
+          <button type="submit" class="btn-submit">Kirim Pesan</button>
         </form>
       </section>
     </div>

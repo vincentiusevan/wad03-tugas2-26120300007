@@ -224,8 +224,34 @@ body {
   width: 680px;
 }
 
+.form-note {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+.required-mark {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.form-hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
 }
 
 .form-group input,
@@ -247,10 +273,12 @@ body {
 
 .btn-submit {
   display: inline-block;
+  border: none;
   background-color: var(--color-primary);
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 8px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
